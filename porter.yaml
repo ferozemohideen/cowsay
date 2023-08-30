@@ -6,7 +6,7 @@ apps:
       ingress:
         enabled: true
         custom_domain: true
-        hosts: ["test-python.ferozemohideen.porter.run"]
+        hosts: ["test-python.feroze.porter.run"]
 
   my-app-wkr:
     run: "python worker.py"
