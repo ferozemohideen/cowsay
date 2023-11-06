@@ -2,6 +2,7 @@
 starts a web process
 """
 import random
+import sys
 
 from cowsay import cowsay
 from cowsay import get_random_cow
