@@ -45,6 +45,12 @@ def index(path):
     html = f"<pre><code>{cowsay(message, cow=cow)}</code></pre>"
     return html, status_code
 
+@app.route('/exit/<int:status_code>', methods=['GET'])
+def exit_with_status(status_code):
+    """
+    Exit the application with the specified status code.
+    """
+    sys.exit(status_code)
 
 if __name__ == "__main__":
     app.run()
