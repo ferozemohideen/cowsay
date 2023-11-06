@@ -2,7 +2,7 @@
 starts a web process
 """
 import random
-import sys
+import os
 
 from cowsay import cowsay
 from cowsay import get_random_cow
@@ -51,7 +51,7 @@ def exit_with_status(status_code):
     """
     Exit the application with the specified status code.
     """
-    sys.exit(status_code)
+    os._exit(status_code)
 
 if __name__ == "__main__":
     app.run()
