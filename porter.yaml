@@ -7,7 +7,7 @@ services:
   type: worker
   run: "python worker.py"
   cpuCores: 0.1
-  ramMegabytes: 4
+  ramMegabytes: 40
 
 env:
   PORT: 3000
