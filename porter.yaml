@@ -3,11 +3,11 @@ services:
 - name: my-app-web
   type: web
   run: "flask --app web run --host 0.0.0.0 --port $PORT"
-  cpuCores: 0.01
-  ramMegabytes: 4
 - name: my-app-wkr
   type: worker
   run: "python worker.py"
+  cpuCores: 0.1
+  ramMegabytes: 40
 
 env:
   PORT: 3000
